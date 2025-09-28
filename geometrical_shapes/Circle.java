@@ -18,7 +18,9 @@ public class Circle implements Drawable {
         Point center = Point.random(width, height);
         Random rng = new Random();
 
-        int radius = rng.nextInt(Math.min(width, height) / 4) + 1;
+        // int radius = rng.nextInt(Math.min(width, height) / 4) + 1;
+        int radius = rng.nextInt(Math.min(width, height) / 2) + 5;
+
         Color color = randomColor(rng);
 
         return new Circle(center, radius, color);
