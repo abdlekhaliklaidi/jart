@@ -4,10 +4,17 @@ import java.awt.Color;
 
 public class Line implements Drawable {
     private Point start, end;
+    private Color color;
 
-    public Line(Point start, Point end) {
+
+    public Line(Point start, Point end, Color color) {
         this.start = start;
         this.end = end;
+        this.color = color;
+    }
+
+    public Line(Point start, Point end) {
+        this(start, end, Color.WHITE); 
     }
 
     public static Line random(int width, int height) {
@@ -43,6 +50,6 @@ public class Line implements Drawable {
 
     @Override
     public Color getColor() {
-        return Color.WHITE;
+        return color;
     }
 }
