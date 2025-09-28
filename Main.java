@@ -13,11 +13,14 @@ public class Main {
             circle.draw(image);
         }
 
-        Point point = new Point(500, 500);
-        point.draw(image);
+        // Point point = new Point(500, 500);
+        // point.draw(image);
 
-        Line line = new Line(new Point(600, 100), new Point(600, 900));
-        line.draw(image);
+        // Line line = new Line(new Point(600, 100), new Point(600, 900));
+        // line.draw(image);
+        
+        // Line line = Line.random(image.getWidth(), image.getHeight());
+        // line.draw(image);
 
         image.save("image.png");
     }
