@@ -1,6 +1,5 @@
 package geometrical_shapes;
 
-
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;

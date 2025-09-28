@@ -6,7 +6,7 @@ public class Line implements Drawable {
     private Point start, end;
     private Color color;
 
-
+    // Constructeur
     public Line(Point start, Point end, Color color) {
         this.start = start;
         this.end = end;
@@ -22,7 +22,7 @@ public class Line implements Drawable {
     }
 
     @Override
-    public void draw(Displayable displayable) {
+    public void draw(Displayable displayable) { // Bresenham's algorithm To draw a straight line between two points on a pixel grid
         int dx = Math.abs(end.x - start.x);
         int dy = Math.abs(end.y - start.y);
         int sx = start.x < end.x ? 1 : -1;
@@ -36,6 +36,7 @@ public class Line implements Drawable {
             if (x == end.x && y == end.y) {
                 break;
             }
+            // equation error
             int e2 = 2 * err;
             if (e2 > -dy) {
                 err -= dy;
